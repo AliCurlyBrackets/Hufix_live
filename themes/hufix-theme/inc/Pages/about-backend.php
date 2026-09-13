@@ -366,18 +366,24 @@ acf_add_local_field_group( array(
                     'return_format' => 'url',
                 ),
                 array(
+                    'key'          => 'field_testi_text',
+                    'label'        => 'Description',
+                    'name'         => 'text',
+                    'type'         => 'wysiwyg',
+                    'toolbar'      => 'basic',
+                    'media_upload' => 0,
+                ),
+                array(
                     'key'  => 'field_testi_name',
                     'label'=> 'Name',
                     'name' => 'name',
                     'type' => 'text',
                 ),
                 array(
-                    'key'          => 'field_testi_text',
-                    'label'        => 'Text',
-                    'name'         => 'text',
-                    'type'         => 'wysiwyg',
-                    'toolbar'      => 'basic',
-                    'media_upload' => 0,
+                    'key'  => 'field_testi_job',
+                    'label'=> 'Job Title',
+                    'name' => 'job',
+                    'type' => 'text',
                 ),
             ),
         ),
@@ -568,11 +574,11 @@ function seed_default_about_us_page() {
 
     // Testimonials
     update_field( 'au_testimonials', array(
-        array( 'image' => $theme_uri . '/assets/images/Testmontional/1.jpg', 'name' => 'James Pattinson', 'text' => '<p>Lobortis leo pretium facilisis amet nisl at nec. Scelerisque risus tortor donec ipsum consequat semper consequat adipiscing ultrices.</p>' ),
-        array( 'image' => $theme_uri . '/assets/images/Testmontional/2.jpg', 'name' => 'Greg Stuart', 'text' => '<p>Vestibulum, cum nam non amet consectetur morbi aenean condimentum eget. Ultrices integer nunc neque accumsan laoreet. Viverra nibh ultrices.</p>' ),
-        array( 'image' => $theme_uri . '/assets/images/Testmontional/3.jpg', 'name' => 'Trevor Mitchell', 'text' => '<p>Ut tristique viverra sed porttitor senectus. A facilisis metus pretium ut habitant lorem. Velit vel bibendum eget aliquet sem nec, id sed. Tincidunt.</p>' ),
-        array( 'image' => $theme_uri . '/assets/images/Testmontional/2.jpg', 'name' => 'Sarah Johnson', 'text' => '<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing.</p>' ),
-        array( 'image' => $theme_uri . '/assets/images/Testmontional/1.jpg', 'name' => 'Michael Reed', 'text' => '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>' ),
+        array( 'image' => $theme_uri . '/assets/images/Testmontional/1.jpg', 'text' => '<p>Lobortis leo pretium facilisis amet nisl at nec. Scelerisque risus tortor donec ipsum consequat semper consequat adipiscing ultrices.</p>', 'name' => 'James Pattinson', 'job' => 'CEO, Global Corp' ),
+        array( 'image' => $theme_uri . '/assets/images/Testmontional/2.jpg', 'text' => '<p>Vestibulum, cum nam non amet consectetur morbi aenean condimentum eget. Ultrices integer nunc neque accumsan laoreet. Viverra nibh ultrices.</p>', 'name' => 'Greg Stuart', 'job' => 'Director, Strategy Partners' ),
+        array( 'image' => $theme_uri . '/assets/images/Testmontional/3.jpg', 'text' => '<p>Ut tristique viverra sed porttitor senectus. A facilisis metus pretium ut habitant lorem. Velit vel bibendum eget aliquet sem nec, id sed. Tincidunt.</p>', 'name' => 'Trevor Mitchell', 'job' => 'HR Manager, Tech Solutions' ),
+        array( 'image' => $theme_uri . '/assets/images/Testmontional/2.jpg', 'text' => '<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing.</p>', 'name' => 'Sarah Johnson', 'job' => 'VP, Operations Ltd.' ),
+        array( 'image' => $theme_uri . '/assets/images/Testmontional/1.jpg', 'text' => '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>', 'name' => 'Michael Reed', 'job' => 'CEO, Future Group' ),
     ), $page_id );
 
     // Partners

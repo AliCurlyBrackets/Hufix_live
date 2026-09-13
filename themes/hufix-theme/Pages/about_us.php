@@ -250,21 +250,25 @@ $trust_image       = get_field( 'au_trust_image', $about_page_id );
             <div class="testimonials_slider" id="testimonialsSlider">
 
                 <?php if ( have_rows( 'au_testimonials', $about_page_id ) ) : ?>
-                    <?php while ( have_rows( 'au_testimonials', $about_page_id ) ) : the_row();
-                        $t_image = get_sub_field( 'image' );
-                        $t_name  = get_sub_field( 'name' );
-                        $t_text  = get_sub_field( 'text' );
-                        ?>
-                        <div class="testimonial_card">
-                            <?php if ( $t_image ) : ?>
-                                <div class="testimonial_img">
-                                    <img src="<?php echo esc_url( $t_image ); ?>" alt="<?php echo esc_attr( $t_name ); ?>">
-                                </div>
-                            <?php endif; ?>
-                            <h3><?php echo esc_html( $t_name ); ?></h3>
-                            <?php echo wp_kses_post( $t_text ); ?>
-                        </div>
-                    <?php endwhile; ?>
+                <?php while ( have_rows( 'au_testimonials', $about_page_id ) ) : the_row();
+                    $t_image = get_sub_field( 'image' );
+                    $t_name  = get_sub_field( 'name' );
+                    $t_text  = get_sub_field( 'text' );
+                    $t_job   = get_sub_field( 'job' );
+                    ?>
+                    <div class="testimonial_card">
+                        <?php if ( $t_image ) : ?>
+                            <div class="testimonial_img">
+                                <img src="<?php echo esc_url( $t_image ); ?>" alt="<?php echo esc_attr( $t_name ); ?>">
+                            </div>
+                        <?php endif; ?>
+                        <?php echo wp_kses_post( $t_text ); ?>
+                        <h3 style="color: #246A73 !important;"><?php echo esc_html( $t_name ); ?></h3>
+                        <?php if ( $t_job ) : ?>
+                            <p class="testimonial_job" style="color: #246A73 !important;"><?php echo esc_html( $t_job ); ?></p>
+                        <?php endif; ?>
+                    </div>
+                <?php endwhile; ?>
                 <?php endif; ?>
 
             </div>
