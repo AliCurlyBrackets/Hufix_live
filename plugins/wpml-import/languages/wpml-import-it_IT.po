@@ -1,0 +1,494 @@
+# Copyright (C) 2026 OnTheGoSystems
+# This file is distributed under the same license as the WPML Export and Import plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: WPML Export and Import 1.2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpml-import\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-05-11T11:42:12-03:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: wpml-import\n"
+"Language: it_IT\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Plugin Name of the plugin
+#: plugin.php
+#: classes/Integrations/Base/Notice.php:148
+#: classes/UI/AdminPageHooks.php:71
+msgid "WPML Export and Import"
+msgstr "WPML Export and Import"
+
+#. Description of the plugin
+#: plugin.php
+msgid "A multipurpose plugin to export and import multilingual content."
+msgstr "Un plugin multiuso per esportare e importare contenuti multilingue."
+
+#. Author of the plugin
+#: plugin.php
+msgid "OnTheGoSystems"
+msgstr "OnTheGoSystems"
+
+#. Author URI of the plugin
+#: plugin.php
+msgid "http://www.onthegosystems.com"
+msgstr "http://www.onthegosystems.com"
+
+#: classes/API/Hooks.php:44
+msgid "Unauthorized"
+msgstr "Non autorizzato"
+
+#: classes/API/Hooks.php:48
+msgid "No items to process"
+msgstr "Nessun elemento da elaborare"
+
+#: classes/API/Hooks.php:48
+msgid "No Content"
+msgstr "Nessun contenuto"
+
+#: classes/API/Hooks.php:54
+msgid "Import process completed"
+msgstr "Processo di importazione completato"
+
+#: classes/API/Hooks.php:54
+msgid "Success"
+msgstr "Successo"
+
+#: classes/API/Hooks.php:61
+msgid "Import process failed"
+msgstr "Processo di importazione fallito"
+
+#: classes/API/Hooks.php:61
+msgid "Internal Server Error"
+msgstr "Errore interno del server"
+
+#: classes/Commands/CleanupPostFields.php:11
+msgid "Cleaning Up Post Data"
+msgstr "Pulizia dei dati dei post"
+
+#: classes/Commands/CleanupPostFields.php:18
+msgid "Removing temporary and import-related post meta data."
+msgstr "Rimozione dei dati meta temporanei e relativi all'importazione dei post."
+
+#: classes/Commands/CleanupTermFields.php:11
+msgid "Cleaning Up Term Data"
+msgstr "Pulizia dei dati dei termini"
+
+#: classes/Commands/CleanupTermFields.php:18
+msgid "Removing temporary and import-related term meta data."
+msgstr "Rimozione dei dati meta temporanei e relativi all'importazione dei termini."
+
+#: classes/Commands/ConnectPostImageAttachments.php:38
+msgid "Connecting Post Image Attachments"
+msgstr "Collegamento degli allegati immagine dei post"
+
+#: classes/Commands/ConnectPostImageAttachments.php:45
+msgid "Updating thumbnail and gallery attachment IDs on translated posts, products, and CPTs to point to their translated equivalents."
+msgstr "Aggiornamento degli ID degli allegati di miniature e gallerie su post, prodotti e CPT tradotti, affinché puntino ai loro equivalenti tradotti."
+
+#: classes/Commands/ConnectTermTranslationsByPostsWithOnlyOneAssignment.php:44
+msgid "Connecting Inline Term Translations"
+msgstr "Collegamento delle traduzioni inline dei termini"
+
+#: classes/Commands/ConnectTermTranslationsByPostsWithOnlyOneAssignment.php:51
+msgid "Scanning posts with a single taxonomy term in order to identify and connect the terms assigned to these posts with their translations."
+msgstr "Scansione dei post con un singolo termine di tassonomia per identificare e collegare i termini assegnati a questi post con le loro traduzioni."
+
+#: classes/Commands/DeleteOriginalsOfDuplicatedTerms.php:29
+msgid "Deleting Obsolete Original Terms"
+msgstr "Eliminazione dei termini originali obsoleti"
+
+#: classes/Commands/DeleteOriginalsOfDuplicatedTerms.php:36
+msgid "Removing original terms that are no longer needed after creating duplicates for same-named terms. Ensuring no posts are linked to these original terms."
+msgstr "Rimozione dei termini originali non più necessari dopo aver creato duplicati per termini con lo stesso nome. Assicurazione che nessun post sia collegato a questi termini originali."
+
+#: classes/Commands/DuplicateTermsAssignedToPostsInDifferentLanguage.php:55
+msgid "Duplicating Terms with Shared Names Across Languages"
+msgstr "Duplicazione dei termini con nomi condivisi tra le lingue"
+
+#: classes/Commands/DuplicateTermsAssignedToPostsInDifferentLanguage.php:62
+msgid "Creating duplicates in the correct language for terms that share the same name across languages, but belong to posts in different languages."
+msgstr "Creazione di duplicati nella lingua corretta per i termini che condividono lo stesso nome tra le lingue, ma appartengono a post in lingue diverse."
+
+#: classes/Commands/FixImportedPostSlugs.php:29
+msgid "Fixing Imported Post Slugs"
+msgstr "Correzione degli slug dei post importati"
+
+#: classes/Commands/FixImportedPostSlugs.php:33
+msgid "Regenerating translated post slugs to prevent conflicts with the originals."
+msgstr "Rigenerazione degli slug dei post tradotti per prevenire conflitti con gli originali."
+
+#: classes/Commands/FlushTranslationsCache.php:10
+msgid "Clearing Translations Cache"
+msgstr "Cancellazione della cache delle traduzioni"
+
+#: classes/Commands/FlushTranslationsCache.php:14
+msgid "Invalidating the persistent cache so it can be regenerated."
+msgstr "Invalidazione della cache persistente per consentirne la rigenerazione."
+
+#: classes/Commands/MarkAncestorsForParentLanguageFix.php:41
+msgid "Marking Parent Terms for Connection"
+msgstr "Marcatura dei termini principali per la connessione"
+
+#: classes/Commands/MarkAncestorsForParentLanguageFix.php:48
+msgid "Collecting parent terms to connect their translations in the next step."
+msgstr "Raccolta dei termini principali per connettere le loro traduzioni nel passaggio successivo."
+
+#: classes/Commands/ReassignPostsToTranslatedTerms.php:39
+msgid "Connecting Posts with Correct Term Translations"
+msgstr "Collegamento dei post con le traduzioni corrette dei termini"
+
+#: classes/Commands/ReassignPostsToTranslatedTerms.php:46
+msgid "Ensuring posts are connected to terms in the correct language, especially if you have the same term names across languages."
+msgstr "Assicurazione che i post siano collegati ai termini nella lingua corretta, specialmente se hai gli stessi nomi di termini in diverse lingue."
+
+#: classes/Commands/SendPostsToAutomaticTranslation.php:43
+msgid "Sending Posts for Automatic Translation"
+msgstr "Invio dei post per la traduzione automatica"
+
+#: classes/Commands/SendPostsToAutomaticTranslation.php:50
+msgid "Creating automatic translation jobs for posts flagged for auto-translation in the exported data."
+msgstr "Creazione di lavori di traduzione automatica per i post contrassegnati per la traduzione automatica nei dati esportati."
+
+#: classes/Commands/SetAttachmentsLanguage.php:33
+msgid "Setting Attachments' Language"
+msgstr "Impostazione della lingua degli allegati"
+
+#: classes/Commands/SetAttachmentsLanguage.php:40
+msgid "Assigning a language to imported attachments."
+msgstr "Assegnazione di una lingua agli allegati importati."
+
+#: classes/Commands/SetFinalPostsStatus.php:32
+msgid "Updating Final Post Status"
+msgstr "Aggiornamento dello stato finale del post"
+
+#: classes/Commands/SetFinalPostsStatus.php:39
+msgid "Setting the post status based on the \"_wpml_import_after_process_post_status\" field from the import file (if provided)."
+msgstr "Impostazione dello stato del post in base al campo “_wpml_import_after_process_post_status” dal file di importazione (se fornito)."
+
+#: classes/Commands/SetInlineTermsLanguage.php:41
+msgid "Identifying Inline Term Languages"
+msgstr "Identificazione delle lingue dei termini inline"
+
+#: classes/Commands/SetInlineTermsLanguage.php:48
+msgid "Identifying and setting the language of terms created during post imports."
+msgstr "Identificazione e impostazione della lingua dei termini creati durante l'importazione dei post."
+
+#: classes/Commands/SetPostsLanguage.php:16
+msgid "Setting Posts’ Language"
+msgstr "Impostazione della lingua dei post"
+
+#: classes/Commands/SetPostsLanguage.php:23
+msgid "Connecting posts to the default language and translations."
+msgstr "Collegamento dei post alla lingua predefinita e alle traduzioni."
+
+#: classes/Commands/SetTermsLanguage.php:17
+msgid "Setting Terms’ Language"
+msgstr "Impostazione della lingua dei termini"
+
+#: classes/Commands/SetTermsLanguage.php:24
+msgid "Connecting taxonomy terms to the default (original) language and translations."
+msgstr "Collegamento dei termini di tassonomia alla lingua predefinita (originale) e alle traduzioni."
+
+#: classes/Commands/SetUnassignedParentTermsLanguage.php:38
+msgid "Setting Parent Terms' Language"
+msgstr "Impostazione della lingua dei termini principali"
+
+#: classes/Commands/SetUnassignedParentTermsLanguage.php:45
+msgid "Assigning language to parent taxonomy terms that don't have one, based on the language assigned to their children."
+msgstr "Assegnazione della lingua ai termini tassonomici principali che non ne hanno una, in base alla lingua assegnata ai loro figli."
+
+#. translators: %s is a link.
+#: classes/Integrations/Base/Notice.php:83
+#, php-format
+msgid "Migrating your multilingual site? Remember to also install %s on your new site before importing your content so we can restore all the translations."
+msgstr "Stai migrando il tuo sito multilingue? Ricordati di installare anche %s sul tuo nuovo sito prima di importare i tuoi contenuti in modo che possiamo ripristinare tutte le traduzioni."
+
+#. translators: %1$s and %2$s are both links.
+#: classes/Integrations/Base/Notice.php:95
+#, php-format
+msgid "Migrating your multilingual shop? With %1$s and %2$s you can transfer your translated content to a new site, including cross-sells, up-sells, and product attributes."
+msgstr "Stai migrando il tuo negozio multilingue? Con %1$s e %2$s puoi trasferire i tuoi contenuti tradotti su un nuovo sito, inclusi cross-sell, up-sell e attributi dei prodotti."
+
+#. translators: %1$s and %2$s are both links.
+#: classes/Integrations/Base/Notice.php:102
+#, php-format
+msgid "Migrating your multilingual shop? Remember to install %1$s and %2$s on your new site before importing your content so we can restore all the translations."
+msgstr "Stai migrando il tuo negozio multilingue? Ricordati di installare %1$s e %2$s sul tuo nuovo sito prima di importare i tuoi contenuti in modo che possiamo ripristinare tutte le traduzioni."
+
+#. translators: %s is a link.
+#: classes/Integrations/Base/Notice.php:114
+#, php-format
+msgid "Looking to import your multilingual content? Remember to install %s in your original site before exporting its content so we can import all the translations here."
+msgstr "Vuoi importare i tuoi contenuti multilingue? Ricordati di installare %s nel tuo sito originale prima di esportare i suoi contenuti in modo che possiamo importare tutte le traduzioni qui."
+
+#. translators: %1$s is a link.
+#: classes/Integrations/Base/Notice.php:126
+#, php-format
+msgid "Looking to import your multilingual content? Install %1$s on this site."
+msgstr "Vuoi importare i tuoi contenuti multilingue? Installa %1$s su questo sito."
+
+#. translators: %2$s and %3$s are both links.
+#: classes/Integrations/Base/Notice.php:129
+#, php-format
+msgid "Remember to also enable %2$s and %3$s in your original shop before exporting its content so we can import all the translations here."
+msgstr "Ricordati anche di abilitare %2$s e %3$s nel tuo negozio originale prima di esportare i suoi contenuti in modo che possiamo importare tutte le traduzioni qui."
+
+#. translators: %1$s and %2$s are both links.
+#: classes/Integrations/Base/Notice.php:137
+#, php-format
+msgid "Looking to import your multilingual content? Remember to enable %1$s and %2$s in your original shop before exporting its content so we can import all the translations here."
+msgstr "Vuoi importare i tuoi contenuti multilingue? Ricordati di abilitare %1$s e %2$s nel tuo negozio originale prima di esportare i suoi contenuti in modo che possiamo importare tutte le traduzioni qui."
+
+#: classes/Integrations/Base/Notice.php:159
+msgid "WooCommerce Multilingual"
+msgstr "WooCommerce multilingual"
+
+#: classes/Integrations/Base/Notice.php:177
+msgid "Switch to all languages"
+msgstr "Passa a tutte le lingue"
+
+#: classes/Integrations/WooCommerce/Commands/ConnectAttributesUsedInProductVariations.php:41
+msgid "Linking Product Attribute Translations"
+msgstr "Collegamento delle traduzioni degli attributi dei prodotti"
+
+#: classes/Integrations/WooCommerce/Commands/ConnectAttributesUsedInProductVariations.php:48
+msgid "Connecting product attributes to their translations based on associated product variations."
+msgstr "Connessione degli attributi del prodotto alle loro traduzioni in base alle variazioni di prodotto associate."
+
+#: classes/Integrations/WooCommerce/Commands/ConnectRelatedProducts.php:58
+msgid "Updating Related Products On Translations"
+msgstr "Aggiornamento dei prodotti correlati nelle traduzioni"
+
+#: classes/Integrations/WooCommerce/Commands/ConnectRelatedProducts.php:65
+msgid "Setting up-sells, cross-sells and grouped products references in the right language."
+msgstr "Impostazione dei riferimenti di up-sell, cross-sell e prodotti raggruppati nella lingua corretta."
+
+#: classes/Integrations/WooCommerce/Commands/ProcessLocalAttributeLabels.php:28
+msgid "Importing Custom Attribute Labels"
+msgstr "Importazione delle etichette degli attributi personalizzati"
+
+#: classes/Integrations/WooCommerce/Commands/ProcessLocalAttributeLabels.php:35
+msgid "Importing labels for product-specific (custom) attributes from the exported data."
+msgstr "Importazione delle etichette per gli attributi specifici del prodotto (personalizzati) dai dati esportati."
+
+#: classes/Integrations/WooCommerce/ExportNotice.php:40
+msgid "You are about to export all your products in all languages at once."
+msgstr "Stai per esportare tutti i tuoi prodotti in tutte le lingue contemporaneamente."
+
+#. translators: %1$s and %2$s are both links.
+#: classes/Integrations/WooCommerce/ExportNotice.php:44
+#: classes/Integrations/WooCommerce/ExportNotice.php:51
+#, php-format
+msgid "Remember to install %1$s and %2$s on your new site before importing your content so we can restore all the translations."
+msgstr "Ricordati di installare %1$s e %2$s sul tuo nuovo sito prima di importare i tuoi contenuti in modo che possiamo ripristinare tutte le traduzioni."
+
+#. translators: %s is the name of a language.
+#: classes/Integrations/WooCommerce/ExportNotice.php:58
+#, php-format
+msgid "You are about to export your products in %s."
+msgstr "Stai per esportare i tuoi prodotti in %s."
+
+#: classes/Integrations/WooCommerce/WCML/Commands/RegisterAttributesAsTranslatableTaxonomies.php:30
+msgid "Registering Product Attributes"
+msgstr "Registrazione degli attributi dei prodotti"
+
+#: classes/Integrations/WooCommerce/WCML/Commands/RegisterAttributesAsTranslatableTaxonomies.php:37
+msgid "Identifying and registering attributes created during product imports for translation."
+msgstr "Identificazione e registrazione degli attributi creati durante l'importazione dei prodotti per la traduzione."
+
+#: classes/Integrations/WooCommerce/WCML/Commands/SetAttributesLanguage.php:44
+msgid "Identifying Product Attribute Languages"
+msgstr "Identificazione delle lingue degli attributi dei prodotti"
+
+#: classes/Integrations/WooCommerce/WCML/Commands/SetAttributesLanguage.php:51
+msgid "Identifying and setting the language of attributes created during product imports."
+msgstr "Identificazione e impostazione della lingua degli attributi creati durante l'importazione dei prodotti."
+
+#: classes/UI/AdminPageHooks.php:48
+msgid "Export and Import"
+msgstr "Esporta e importa"
+
+#. translators: %s is the label of the tool.
+#: classes/UI/AdminPageHooks.php:150
+#, php-format
+msgid "I’m using the built-in %s export/import tool"
+msgstr "Sto usando lo strumento di esportazione/importazione integrato di %s"
+
+#. translators: %s is the label of the plugin.
+#: classes/UI/AdminPageHooks.php:155
+#, php-format
+msgid "I’m using %s plugin"
+msgstr "Sto usando il plugin %s"
+
+#. translators: %1$s is the number of processed items and %2$s is the total number of items.
+#: classes/UI/AdminPageHooks.php:160
+#, php-format
+msgid "(%1$d/%2$d items)"
+msgstr "(%1$d/%2$d elementi)"
+
+#. translators: %1$s is the number of skipped items.
+#: classes/UI/AdminPageHooks.php:162
+#, php-format
+msgid "%d skipped"
+msgstr "%d saltato"
+
+#: classes/UI/AdminPageHooks.php:163
+msgid "(no items)"
+msgstr "(nessun elemento)"
+
+#: classes/UI/AdminPageHooks.php:164
+msgid "Counting items..."
+msgstr "Conteggio elementi..."
+
+#: classes/UI/AdminPageHooks.php:166
+msgid "First, tell us how you’re going to create the content that you’ll be importing:"
+msgstr "Prima, dicci come creerai il contenuto che importerai:"
+
+#: classes/UI/AdminPageHooks.php:167
+msgid "Continue"
+msgstr "Continua"
+
+#. translators: %1$s and %2$s are plugin labels.
+#: classes/UI/AdminPageHooks.php:172
+#, php-format
+msgid "I’m using %1$s and %2$s plugins"
+msgstr "Sto usando i plugin %1$s e %2$s"
+
+#: classes/UI/AdminPageHooks.php:174
+msgid "I’m using a different method to export from this site"
+msgstr "Sto usando un metodo diverso per esportare da questo sito"
+
+#: classes/UI/AdminPageHooks.php:176
+msgid "I’m exporting the content from this site"
+msgstr "Sto esportando il contenuto da questo sito"
+
+#: classes/UI/AdminPageHooks.php:177
+msgid "I’m exporting the content from a different website or system"
+msgstr "Sto esportando il contenuto da un sito web o sistema diverso"
+
+#: classes/UI/AdminPageHooks.php:178
+msgid "Before importing, add language columns to your content"
+msgstr "Prima di importare, aggiungi colonne di lingua al tuo contenuto"
+
+#: classes/UI/AdminPageHooks.php:179
+msgid "Make sure that your import file includes the following columns (custom fields) with language information:"
+msgstr "Assicurati che il tuo file di importazione includa le seguenti colonne (campi personalizzati) con informazioni sulla lingua:"
+
+#. translators: %s is the field key.
+#: classes/UI/AdminPageHooks.php:182
+#, php-format
+msgid "%s: A value that’s the same for all the translations of each item. In e-commerce sites this will often be the SKU."
+msgstr "%s: Un valore che è lo stesso per tutte le traduzioni di ciascun elemento. Nei siti di e-commerce questo sarà spesso lo SKU."
+
+#. translators: %s is the field key.
+#: classes/UI/AdminPageHooks.php:184
+#, php-format
+msgid "%s: The language code for each item."
+msgstr "%s: Il codice lingua per ogni elemento."
+
+#: classes/UI/AdminPageHooks.php:186
+msgid "And, you can include these two columns if needed:"
+msgstr "E, puoi includere queste due colonne se necessario:"
+
+#. translators: %s is the field key.
+#: classes/UI/AdminPageHooks.php:189
+#, php-format
+msgid "%s: If this item is a translation, set this column to the code of the source language. If it’s not a translation, keep it empty."
+msgstr "%s: Se questo elemento è una traduzione, imposta questa colonna al codice della lingua di origine. Se non è una traduzione, lasciala vuota."
+
+#. translators: %s is the field key.
+#: classes/UI/AdminPageHooks.php:191
+#, php-format
+msgid "%s: Set to “draft” or “published” to determine the publishing status of the post after adjusting languages. Usually, this value will be “published”."
+msgstr "%s: Imposta su “draft” o “published” per determinare lo stato di pubblicazione del post dopo aver regolato le lingue. Di solito, questo valore sarà “published”."
+
+#. translators: %s is a comma-separated list of languages.
+#: classes/UI/AdminPageHooks.php:195
+#, php-format
+msgid "Here is an example of importing two items, into your site’s languages (%s):"
+msgstr "Ecco un esempio di importazione di due elementi nelle lingue del tuo sito (%s):"
+
+#: classes/UI/AdminPageHooks.php:197
+msgid "Once you’ve added language columns to your multilingual content file, import it to your site using whatever import plugin you prefer."
+msgstr "Una volta aggiunte le colonne della lingua al tuo file di contenuto multilingue, importalo nel tuo sito utilizzando qualsiasi plugin di importazione tu preferisca."
+
+#: classes/UI/AdminPageHooks.php:198
+msgid "Before importing, your content needs language information"
+msgstr "Prima di importare, il tuo contenuto necessita di informazioni sulla lingua"
+
+#. translators: %s is the label of the plugin.
+#: classes/UI/AdminPageHooks.php:200
+#, php-format
+msgid "%s will add the necessary language information to your export."
+msgstr "%s aggiungerà le informazioni necessarie sulla lingua alla tua esportazione."
+
+#: classes/UI/AdminPageHooks.php:201
+msgid "Import your multilingual content file into the site using whatever import plugin you prefer."
+msgstr "Importa il tuo file di contenuto multilingue nel sito utilizzando qualsiasi plugin di importazione tu preferisca."
+
+#: classes/UI/AdminPageHooks.php:202
+msgid "Use your favorite import plugin"
+msgstr "Usa il tuo plugin di importazione preferito"
+
+#: classes/UI/AdminPageHooks.php:203
+msgid "After you import the content, it will still not show the correct language information. So, we recommend that you import new content as Drafts. If you’re importing updates, you can keep already-published content as published."
+msgstr "Dopo aver importato il contenuto, questo non mostrerà ancora le informazioni corrette sulla lingua. Quindi, ti consigliamo di importare i nuovi contenuti come Bozze. Se stai importando aggiornamenti, puoi mantenere i contenuti già pubblicati come pubblicati."
+
+#. translators: %s is the label of the plugin.
+#: classes/UI/AdminPageHooks.php:205
+#, php-format
+msgid "Return here, to %s, to set languages and connect translations"
+msgstr "Ritorna qui, a %s, per impostare le lingue e collegare le traduzioni"
+
+#. translators: %s is the label of the plugin.
+#: classes/UI/AdminPageHooks.php:207
+#, php-format
+msgid "When you visit this page after you’ve imported content with language information, you’ll be able to run %s to apply languages and connect translations."
+msgstr "Quando visiterai questa pagina dopo aver importato contenuti con informazioni sulla lingua, potrai eseguire %s per applicare le lingue e collegare le traduzioni."
+
+#. translators: %1$s and %3$s are HTML link wrappers / %2$s is the plugin title.
+#: classes/UI/AdminPageHooks.php:211
+#, php-format
+msgid "Already imported and still seeing this screen? %1$sTroubleshooting %2$s%3$s."
+msgstr "Hai già importato e stai ancora vedendo questa schermata? %1$sRisoluzione dei problemi %2$s%3$s."
+
+#: classes/UI/AdminPageHooks.php:218
+msgid "How to Export and Import Content in Multiple Languages"
+msgstr "Come esportare e importare contenuti in più lingue"
+
+#. translators: %s is the label of the plugin.
+#: classes/UI/AdminPageHooks.php:220
+#, php-format
+msgid "%s is ready to update your imported content"
+msgstr "%s è pronto per aggiornare i tuoi contenuti importati"
+
+#. translators: %1$d is the number of terms and %2$d is the number of posts.
+#: classes/UI/AdminPageHooks.php:223
+#, php-format
+msgid "Good job. We see %1$d terms and %2$d posts that are imported and need language information."
+msgstr "Ben fatto. Vediamo %1$d termini e %2$d post che sono stati importati e necessitano di informazioni sulla lingua."
+
+#. translators: %d is the number of terms.
+#: classes/UI/AdminPageHooks.php:226
+#, php-format
+msgid "Good job. We see %d terms that are imported and need language information."
+msgstr "Ben fatto. Vediamo %d termini che sono stati importati e necessitano di informazioni sulla lingua."
+
+#. translators: %d is the number of posts.
+#: classes/UI/AdminPageHooks.php:228
+#, php-format
+msgid "Good job. We see %d posts that are imported and need language information."
+msgstr "Ben fatto. Vediamo %d post che sono stati importati e necessitano di informazioni sulla lingua."
+
+#: classes/UI/AdminPageHooks.php:230
+msgid "Run WPML Import"
+msgstr "Esegui importazione WPML"
+
+#: classes/UI/AdminPageHooks.php:231
+msgid "Multilingual Import Complete"
+msgstr "Importazione multilingue completata"

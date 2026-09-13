@@ -1,0 +1,18 @@
+/**
+ * CS Fallback CSS
+ * ستايل احتياطي بسيط بس للكارت لما مفيش صورة مرفوعة للكورس (.cs-card-no-img).
+ * مش بيلمس أي كلاس تاني من ستايل الثيم الأصلي.
+ */
+
+.cs-card-no-img .cs-mode-badge-noimg {
+	position: static;
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	margin: 14px 14px 0;
+	width: fit-content;
+}
+
+.cs-price-empty {
+	min-height: 1em;
+}

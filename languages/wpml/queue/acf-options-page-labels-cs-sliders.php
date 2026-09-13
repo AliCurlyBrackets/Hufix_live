@@ -1,0 +1,2 @@
+<?php
+return ['items'=>['Course Sliders'=>['urls'=>[],'names'=>['options-page-cs-sliders-page_title-a1098d231d6dd0a13ba9bb93e851b69f','options-page-cs-sliders-menu_title-a1098d231d6dd0a13ba9bb93e851b69f'],'cmp'=>['wpml-string-translation',1]],'Update'=>['urls'=>[],'names'=>['options-page-cs-sliders-update_button-06933067aafd48425d67bcb01bba5cb6'],'cmp'=>['wpml-string-translation',1]],'Options Updated'=>['urls'=>[],'names'=>['options-page-cs-sliders-updated_message-175309035a73fe39362540d67a497553'],'cmp'=>['wpml-string-translation',1]]]];

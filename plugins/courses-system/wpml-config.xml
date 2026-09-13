@@ -1,0 +1,16 @@
+<wpml-config>
+	<custom-types>
+		<!--
+			نوع البوست "course" (الكورسات/السيشنز) يتسجل كـ "Translatable" تلقائي
+			في WPML من غير ما تدخل تظبطه يدوي من WPML -> Settings -> Post Types
+			Translation. الترجمة الفعلية بتتعمل عن طريق شيت الاستيراد (عمود lang +
+			source_course_id) مش عن طريق محرر WPML، فمحتاجينه Translatable بس
+			(مش "Translatable, use translation editor").
+		-->
+		<custom-type translate="1">course</custom-type>
+	</custom-types>
+	<taxonomies>
+		<!-- الكاتيجوري (course_category) يتسجل كـ Translatable تلقائي بنفس المنطق. -->
+		<taxonomy translate="1">course_category</taxonomy>
+	</taxonomies>
+</wpml-config>

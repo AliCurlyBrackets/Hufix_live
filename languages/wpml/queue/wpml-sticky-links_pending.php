@@ -1,0 +1,2 @@
+<?php
+return ['items'=>['Running'=>['saveStringInDb'=>true,'cmp'=>['wpml-sticky-links',1],'names'=>[],'urls'=>[]],'Scan'=>['saveStringInDb'=>true,'cmp'=>['wpml-sticky-links',1],'names'=>[],'urls'=>[]],'fixed'=>['saveStringInDb'=>true,'cmp'=>['wpml-sticky-links',1],'names'=>[],'urls'=>[]],'Start'=>['saveStringInDb'=>true,'cmp'=>['wpml-sticky-links',1],'names'=>[],'urls'=>[]],'items left'=>['saveStringInDb'=>true,'cmp'=>['wpml-sticky-links',1],'names'=>[],'urls'=>[]]]];
