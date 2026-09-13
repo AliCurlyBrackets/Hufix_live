@@ -1789,13 +1789,14 @@ font-weight: lighter;
 }
 
 /* ===== Name ===== */
-.testimonial_card h3 {
+.testimonial_card h5 {
     font-family: var(--bold);
     font-weight: 700;
     font-size: 24px;
     line-height: 150%;
     text-align: center;
     color: #246A73 !important;
+    margin: 10px 0 4px 0;
 }
 
 /* ===== Job Title ===== */
@@ -1807,7 +1808,7 @@ font-weight: lighter;
     text-align: center;
     color: #246A73 !important;
     display: block;
-    margin-top: 4px;
+    margin-bottom: 8px;
 }
 
 /* ===== Quote ===== */

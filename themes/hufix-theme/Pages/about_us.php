@@ -263,9 +263,9 @@ $trust_image       = get_field( 'au_trust_image', $about_page_id );
                             </div>
                         <?php endif; ?>
                         <?php echo wp_kses_post( $t_text ); ?>
-                        <h3 style="color: #246A73 !important;"><?php echo esc_html( $t_name ); ?></h3>
+                        <h5 style="color: #246A73 !important;"><?php echo esc_html( $t_name ); ?></h5>
                         <?php if ( $t_job ) : ?>
-                            <p class="testimonial_job" style="color: #246A73 !important;"><?php echo esc_html( $t_job ); ?></p>
+                            <span class="testimonial_job" style="color: #246A73 !important;"><?php echo esc_html( $t_job ); ?></span>
                         <?php endif; ?>
                     </div>
                 <?php endwhile; ?>
